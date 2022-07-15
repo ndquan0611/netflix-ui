@@ -89,7 +89,8 @@ export const Text = styled.h3`
     color: #fff;
     font-weight: 400;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
+        padding: 10px 10%;
         font-size: 1.8rem;
     }
 `;
