@@ -5,6 +5,10 @@ export const Container = styled.div`
     text-align: center;
     padding: 70px 45px;
     border-bottom: 8px solid #222;
+
+    @media (max-width: 600px) {
+        padding: 50px 0;
+    }
 `;
 
 export const Inner = styled.div`
@@ -20,6 +24,10 @@ export const Title = styled.h1`
     text-align: center;
     color: #fff;
 
+    @media (max-width: 1000px) {
+        font-size: 4rem;
+    }
+
     @media (max-width: 600px) {
         font-size: 2.6rem;
     }
@@ -29,6 +37,16 @@ export const Frame = styled.div`
     width: 75%;
     max-width: 815px;
     margin: 52px auto;
+
+    @media (max-width: 1000px) {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+        margin: 20px auto;
+    }
 `;
 
 export const Item = styled.div`
@@ -57,37 +75,31 @@ export const Header = styled.div`
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
         font-size: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
     }
 `;
 
 export const Body = styled.div`
-    font-size: 26px;
-    text-align: left;
+    font-size: 2.6rem;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.2;
+    text-align: left;
     padding: 1.2em;
     background: #303030;
     white-space: pre-wrap;
     user-select: none;
+    transition: 0.3s;
 
-    &.closed {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-    }
-    &.open {
-        max-height: 1200px;
-        transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-    }
-
-    span {
-        display: block;
-        padding: 0.8em 2.2em 0.8em 1.2em;
-    }
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
         font-size: 2rem;
-        line-height: 22px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 1.8rem;
     }
 `;
