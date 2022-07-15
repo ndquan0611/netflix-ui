@@ -20,4 +20,15 @@ export const GlobalStyles = createGlobalStyle`
         background-color: #000000;
         color: #333333;
     }
+
+    button,
+    input,
+    [tabindex] {
+        border: none;
+        outline: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
 `;
