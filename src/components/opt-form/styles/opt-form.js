@@ -3,9 +3,11 @@ import styled from 'styled-components/macro';
 export const Container = styled.div`
     width: 100%;
     max-width: 950px;
+    padding-top: 10px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
 `;
 
 export const Form = styled.form`
@@ -90,7 +92,7 @@ export const Text = styled.h3`
     font-weight: 400;
 
     @media (max-width: 1000px) {
-        padding: 10px 10%;
+        padding: 0 10%;
         font-size: 1.8rem;
     }
 `;
