@@ -9,8 +9,6 @@ export default function SignIn() {
     const history = useNavigate();
     const { firebase } = useContext(FirebaseContext);
 
-    console.log(firebase);
-
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
