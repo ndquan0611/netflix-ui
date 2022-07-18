@@ -7,6 +7,10 @@ export const Container = styled.div`
     padding: 140px 90px;
     color: #fff;
     border-bottom: 8px solid #222;
+
+    @media (max-width: 1000px) {
+        padding: 140px 45px;
+    }
 `;
 
 export const Title = styled.h1`
